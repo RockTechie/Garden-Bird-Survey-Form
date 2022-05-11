@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com/css2?family=roboto+slab+serif+condensed+mono"
+    />
+    <link rel="stylesheet" href="css/survey.css" />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>Garden Bird Survey Form</title>
+  </head>
+
+  <body>
+    <header class="blue-tit">
+      <div class="container">
+        <h1 id="title">Garden Bird Survey</h1>
+        <p id="description grid-col-span-2">
+          This Garden Bird Survey form is about gathering information about our
+          feathered friends who visits us in our gardens!
+        </p>
+      </div>
+    </header>
+
+    <form id="survey-form">
+      <section class="details-grid">
+        <user-input class="details grid-col-span-2">
+          <label id="name-label">Name:</label>
+          <input
+            type="text"
+            placeholder="Please enter your full name"
+            id="name"
+            required />
+          <br
+        /></user-input>
+        <user-input class="details grid-col-span-2">
+          <label id="postcode-label">Postcode:</label>
+          <input
+            type="postcode"
+            id="postcode"
+            placeholder="Please enter your postcode"
+            required
+            name="postcode" />
+          <br
+        /></user-input>
+        <user-input class="details grid-col-span-2">
+          <label id="email-label">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Please enter your valid email address"
+            required
+            name="email" />
+          <br
+        /></user-input>
+        <user-input class="details grid-col-span-2">
+          <label id="number-label">Age:</label>
+          <input
+            type="number"
+            id="number"
+            name="age-limit"
+            min="5"
+            max="105"
+            placeholder="Please enter your age"
+            required />
+          <br
+        /></user-input>
+      </section>
+      <br />
+      <section class="day-of-week">
+        <label for="day"
+          ><strong>What day of week do they visit your garden?</strong></label
+        >
+        <br />
+        <select id="dropdown" name="day" id="day" multiple>
+          <optgroup label="hold CTRL button to select multiple options">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </optgroup>
+        </select>
+      </section>
+      <br />
+      <p id="sel_fav_wildfowl">Please select your favourite garden birds:</p>
+
+      <section class="fav-garden-bird">
+        <input
+          type="checkbox"
+          id="coal_tit"
+          name="fav_wildfowl"
+          value="Coal_tit"
+        />
+        <label for="coal_tit">Coal tit</label><br />
+
+        <input
+          type="checkbox"
+          id="blue_tit"
+          name="fav_wildfowl"
+          value="Blue_tit"
+        />
+        <label for="blue_tit">Blue tit</label><br />
+
+        <input
+          type="checkbox"
+          id="great_tit"
+          name="fav_wildfowl"
+          value="Great_tit"
+        />
+        <label for="blue_tit">Great tit</label><br />
+
+        <input
+          type="checkbox"
+          id="long-tail_tit"
+          name="fav_wildfowl"
+          value="Long-tail_tit"
+        />
+        <label for="blue_tit">Long-tail tit</label><br />
+
+        <input type="checkbox" id="wren" name="fav_wildfowl" value="Wren" />
+        <label for="wren">Wren</label><br />
+
+        <input
+          type="checkbox"
+          id="greenfinch"
+          name="fav_wildfowl"
+          value="Greenfinch"
+        />
+        <label for="greenfinch">Greenfinch</label><br />
+
+        <input
+          type="checkbox"
+          id="goldfinch"
+          name="fav_wildfowl"
+          value="Goldfinch"
+        />
+        <label for="goldfinch">Goldfinch</label><br />
+
+        <input
+          type="checkbox"
+          id="bullfinch"
+          name="fav_wildfowl"
+          value="Bullfinch"
+        />
+        <label for="bullfinch">Bullfinch</label><br />
+
+        <input
+          type="checkbox"
+          id="chaffinch"
+          name="fav_wildfowl"
+          value="Chaffinch"
+        />
+        <label for="chaffinch">Chaffinch</label><br />
+
+        <input
+          type="checkbox"
+          id="blackcap"
+          name="fav_wildfowl"
+          value="Blackcap"
+        />
+        <label for="blackcap">Blackcap</label><br />
+
+        <input type="checkbox" id="sisken" name="fav_wildfowl" value="Sisken" />
+        <label for="sisken">Sisken</label><br />
+
+        <input
+          type="checkbox"
+          id="dunnock"
+          name="fav_wildfowl"
+          value="Dunnock"
+        />
+        <label for="dunnock">Dunnock</label><br />
+
+        <input
+          type="checkbox"
+          id="Lesser_redpoll"
+          name="fav_wildfowl"
+          value="Lesser_redpoll"
+        />
+        <label for="lesser_redpoll">Lesser redpoll</label><br />
+
+        <input
+          type="checkbox"
+          id="treecreeper"
+          name="fav_wildfowl"
+          value="Treecreeper"
+        />
+        <label for="treecreeper">Treecreeper</label><br />
+
+        <input
+          type="checkbox"
+          id="nuthatch"
+          name="fav_wildfowl"
+          value="nuthatch"
+        />
+        <label for="nuthatch">Nuthatch</label><br />
+
+        <input
+          type="checkbox"
+          id="willow_warbler"
+          name="fav_wildfowl"
+          value="Willow_warbler"
+        />
+        <label for="willow_warbler">Willow warbler</label><br />
+
+        <input
+          type="checkbox"
+          id="grey_wagtail"
+          name="fav_wildfowl"
+          value="grey_wagtail"
+        />
+        <label for="grey_wagtail">Grey wagtail</label><br />
+
+        <input
+          type="checkbox"
+          id="pied_wagtail"
+          name="fav_wildfowl"
+          value="Pied wagtail"
+        />
+        <label for="pied_wagtail">Pied wagtail</label><br />
+
+        <input
+          type="checkbox"
+          id="yellow_wagtail"
+          name="fav_wildfowl"
+          value="Yellow_wagtail"
+        />
+        <label for="yellow_wagtail">Yellow wagtail</label><br />
+
+        <input
+          type="checkbox"
+          id="green_woodpeck"
+          name="fav_wildfowl"
+          value="green_woodpeck"
+        />
+        <label for="green_woodpeck">Green woodpeck</label><br />
+
+        <input
+          type="checkbox"
+          id="great-spotted-woodpecker"
+          name="fav_wildfowl"
+          value="Great-spotted_woodpecker"
+        />
+        <label for="great-spotted_woodpecker">Great spotted woodpecker</label
+        ><br />
+
+        <input type="checkbox" id="robin" name="fav_wildfowl" value="Robin" />
+        <label for="robin">Robin</label><br />
+
+        <input
+          type="checkbox"
+          id="house_sparrow"
+          name="fav_wildfowl"
+          value="House_sparrow"
+        />
+        <label for="house_sparrow">House sparrow</label><br />
+
+        <input
+          type="checkbox"
+          id="tree_Sparrow"
+          name="fav_wildfowl"
+          value="tree_Sparrow"
+        />
+        <label for="tree_Sparrow">Tree Sparrow</label><br />
+
+        <input
+          type="checkbox"
+          id="house_martin"
+          name="fav_wildfowl"
+          value="House_martin"
+        />
+        <label for="house_martin">House martin</label><br />
+
+        <input
+          type="checkbox"
+          id="swallow"
+          name="fav_wildfowl"
+          value="Swallow"
+        />
+        <label for="swallow">Swallow</label><br />
+
+        <input type="checkbox" id="swift" name="fav_wildfowl" value="Swift" />
+        <label for="swift">Swift</label><br />
+
+        <input
+          type="checkbox"
+          id="starling"
+          name="fav_wildfowl"
+          value="Starling"
+        />
+        <label for="starling">Starling</label><br />
+
+        <input
+          type="checkbox"
+          id="blackbird"
+          name="fav_wildfowl"
+          value="Blackbird"
+        />
+        <label for="blackbird">Blackbird</label><br />
+
+        <input
+          type="checkbox"
+          id="song_thrush"
+          name="fav_wildfowl"
+          value="Song_thrush"
+        />
+        <label for="song_thrush">Song thrush</label><br />
+
+        <input
+          type="checkbox"
+          id="fieldfare"
+          name="fav_wildfowl"
+          value="Fieldfare"
+        />
+        <label for="fieldfare">Fieldfare</label><br />
+
+        <input
+          type="checkbox"
+          id="small_gull"
+          name="fav_wildfowl"
+          value="Small_gull"
+        />
+        <label for="small_gull">Small Gull</label><br />
+
+        <input
+          type="checkbox"
+          id="blackheaded_gull"
+          name="fav_wildfowl"
+          value="Blackheaded_gull"
+        />
+        <label for="blackheaded_gull">Blackheaded Gull</label><br />
+
+        <input
+          type="checkbox"
+          id="herring_gull"
+          name="fav_wildfowl"
+          value="Herring_gull"
+        />
+        <label for="herring_gull">Herring Gull</label><br />
+
+        <input
+          type="checkbox"
+          id="lesser-black-backed_gull"
+          name="fav_wildfowl"
+          value="lesser-black-backed_gull"
+        />
+        <label for="lesser-black-backed_gull">Lesser Black-backed Gull</label
+        ><br />
+
+        <input type="checkbox" id="tern" name="fav_wildfowl" value="Tern" />
+        <label for="tern">Tern</label><br />
+
+        <input
+          type="checkbox"
+          id="carrion_crow"
+          name="fav_wildfowl"
+          value="Carrion_crow"
+        />
+        <label for="carrion_crow">Carrion Crow</label><br />
+
+        <input type="checkbox" id="chough" name="fav_wildfowl" value="Chough" />
+        <label for="chough">Chough</label><br />
+
+        <input type="checkbox" id="magpie" name="fav_wildfowl" value="Magpie" />
+        <label for="magpie">Mapie</label><br />
+
+        <input
+          type="checkbox"
+          id="hooded_crow"
+          name="fav_wildfowl"
+          value="Hooded_crow"
+        />
+        <label for="hooded_crow">Hooded crow</label><br />
+
+        <input type="checkbox" id="jay" name="fav_wildfowl" value="Jay" />
+        <label for="jay">Jay</label><br />
+
+        <input
+          type="checkbox"
+          id="jackdaw"
+          name="fav_wildfowl"
+          value="Jackdaw"
+        />
+        <label for="jackdaw">Jackdaw</label><br />
+
+        <input type="checkbox" id="rook" name="fav_wildfowl" value="Rook" />
+        <label for="rook">Rook</label><br />
+
+        <input type="checkbox" id="ravin" name="fav_wildfowl" value="Ravin" />
+        <label for="ravin">Ravin</label><br />
+
+        <input
+          type="checkbox"
+          id="collard_dove"
+          name="fav_wildfowl"
+          value="Collard_dove"
+        />
+        <label for="collard_dove">Collard dove</label><br />
+
+        <input
+          type="checkbox"
+          id="rock_dove"
+          name="fav_wildfowl"
+          value="Rock_dove"
+        />
+        <label for="rock_dove">Rock dove</label><br />
+
+        <input
+          type="checkbox"
+          id="Stock_dove"
+          name="fav_wildfowl"
+          value="Stock_dove"
+        />
+        <label for="stock_dove">Stock dove</label><br />
+
+        <input
+          type="checkbox"
+          id="turtle_dove"
+          name="fav_wildfowl"
+          value="Turtle_dove"
+        />
+        <label for="turtle_dove">Turtle dove</label><br />
+
+        <input
+          type="checkbox"
+          id="wood_pigeon"
+          name="fav_wildfowl"
+          value="Wood_pigeon"
+        />
+        <label for="wood_pigeon">Wood Pigeon</label><br />
+      </section>
+      <br />
+      <p id="most_fav_wildfowl">
+        Please select one which is your most favourite feathered garden friend
+      </p>
+      <section class="most-fav-garden-bird">
+        <input
+          type="radio"
+          id="coal_tit"
+          name="fav_wildfowl"
+          value="Coal_tit"
+        />
+        <label for="">Coal tit</label><br />
+
+        <input
+          type="radio"
+          id="blue_tit"
+          name="fav_wildfowl"
+          value="Blue_tit"
+        />
+        <label for="blue_tit">Blue tit</label><br />
+
+        <input
+          type="radio"
+          id="great_tit"
+          name="fav_wildfowl"
+          value="Great_tit"
+        />
+        <label for="blue_tit">Great tit</label><br />
+
+        <input
+          type="radio"
+          id="long-tail_tit"
+          name="fav_wildfowl"
+          value="Long-tail_tit"
+        />
+        <label for="blue_tit">Long-tail tit</label><br />
+
+        <input type="radio" id="wren" name="fav_wildfowl" value="Wren" />
+        <label for="wren">Wren</label><br />
+
+        <input
+          type="radio"
+          id="greenfinch"
+          name="fav_wildfowl"
+          value="Greenfinch"
+        />
+        <label for="greenfinch">Greenfinch</label><br />
+
+        <input
+          type="radio"
+          id="goldfinch"
+          name="fav_wildfowl"
+          value="Goldfinch"
+        />
+        <label for="goldfinch">Goldfinch</label><br />
+
+        <input
+          type="radio"
+          id="bullfinch"
+          name="fav_wildfowl"
+          value="Bullfinch"
+        />
+        <label for="bullfinch">Bullfinch</label><br />
+
+        <input
+          type="radio"
+          id="chaffinch"
+          name="fav_wildfowl"
+          value="Chaffinch"
+        />
+        <label for="chaffinch">Chaffinch</label><br />
+
+        <input
+          type="radio"
+          id="blackcap"
+          name="fav_wildfowl"
+          value="Blackcap"
+        />
+        <label for="blackcap">Blackcap</label><br />
+
+        <input type="radio" id="sisken" name="fav_wildfowl" value="Sisken" />
+        <label for="sisken">Sisken</label><br />
+
+        <input type="radio" id="dunnock" name="fav_wildfowl" value="Dunnock" />
+        <label for="dunnock">Dunnock</label><br />
+
+        <input
+          type="radio"
+          id="Lesser_redpoll"
+          name="fav_wildfowl"
+          value="Lesser_redpoll"
+        />
+        <label for="lesser_redpoll">Lesser redpoll</label><br />
+
+        <input
+          type="radio"
+          id="treecreeper"
+          name="fav_wildfowl"
+          value="Treecreeper"
+        />
+        <label for="treecreeper">Treecreeper</label><br />
+
+        <input
+          type="radio"
+          id="nuthatch"
+          name="fav_wildfowl"
+          value="nuthatch"
+        />
+        <label for="nuthatch">Nuthatch</label><br />
+
+        <input
+          type="radio"
+          id="willow_warbler"
+          name="fav_wildfowl"
+          value="Willow_warbler"
+        />
+        <label for="willow_warbler">Willow warbler</label><br />
+
+        <input
+          type="radio"
+          id="grey_wagtail"
+          name="fav_wildfowl"
+          value="grey_wagtail"
+        />
+        <label for="grey_wagtail">Grey wagtail</label><br />
+
+        <input
+          type="radio"
+          id="pied_wagtail"
+          name="fav_wildfowl"
+          value="Pied wagtail"
+        />
+        <label for="pied_wagtail">Pied wagtail</label><br />
+
+        <input
+          type="radio"
+          id="yellow_wagtail"
+          name="fav_wildfowl"
+          value="Yellow_wagtail"
+        />
+        <label for="yellow_wagtail">Yellow wagtail</label><br />
+
+        <input
+          type="radio"
+          id="green_woodpeck"
+          name="fav_wildfowl"
+          value="green_woodpeck"
+        />
+        <label for="green_woodpeck">Green woodpeck</label><br />
+
+        <input
+          type="radio"
+          id="great-spotted-woodpecker"
+          name="fav_wildfowl"
+          value="Great-spotted_woodpecker"
+        />
+        <label for="great-spotted_woodpecker">Great spotted woodpecker</label
+        ><br />
+
+        <input type="radio" id="robin" name="fav_wildfowl" value="Robin" />
+        <label for="robin">Robin</label><br />
+
+        <input
+          type="radio"
+          id="house_sparrow"
+          name="fav_wildfowl"
+          value="House_sparrow"
+        />
+        <label for="house_sparrow">House sparrow</label><br />
+
+        <input
+          type="radio"
+          id="tree_Sparrow"
+          name="fav_wildfowl"
+          value="tree_Sparrow"
+        />
+        <label for="tree_Sparrow">Tree Sparrow</label><br />
+
+        <input
+          type="radio"
+          id="house_martin"
+          name="fav_wildfowl"
+          value="House_martin"
+        />
+        <label for="house_martin">House martin</label><br />
+
+        <input type="radio" id="swallow" name="fav_wildfowl" value="Swallow" />
+        <label for="swallow">Swallow</label><br />
+
+        <input type="radio" id="swift" name="fav_wildfowl" value="Swift" />
+        <label for="swift">Swift</label><br />
+
+        <input
+          type="radio"
+          id="starling"
+          name="fav_wildfowl"
+          value="Starling"
+        />
+        <label for="starling">Starling</label><br />
+
+        <input
+          type="radio"
+          id="blackbird"
+          name="fav_wildfowl"
+          value="Blackbird"
+        />
+        <label for="blackbird">Blackbird</label><br />
+
+        <input
+          type="radio"
+          id="song_thrush"
+          name="fav_wildfowl"
+          value="Song_thrush"
+        />
+        <label for="song_thrush">Song thrush</label><br />
+
+        <input
+          type="radio"
+          id="fieldfare"
+          name="fav_wildfowl"
+          value="Fieldfare"
+        />
+        <label for="fieldfare">Fieldfare</label><br />
+
+        <input
+          type="radio"
+          id="small_gull"
+          name="fav_wildfowl"
+          value="Small_gull"
+        />
+        <label for="small_gull">Small Gull</label><br />
+
+        <input
+          type="radio"
+          id="blackheaded_gull"
+          name="fav_wildfowl"
+          value="Blackheaded_gull"
+        />
+        <label for="blackheaded_gull">Blackheaded Gull</label><br />
+
+        <input
+          type="radio"
+          id="herring_gull"
+          name="fav_wildfowl"
+          value="Herring_gull"
+        />
+        <label for="herring_gull">Herring Gull</label><br />
+
+        <input
+          type="radio"
+          id="lesser-black-backed_gull"
+          name="fav_wildfowl"
+          value="lesser-black-backed_gull"
+        />
+        <label for="lesser-black-backed_gull">Lesser Black-backed Gull</label
+        ><br />
+
+        <input type="radio" id="tern" name="fav_wildfowl" value="Tern" />
+        <label for="tern">Tern</label><br />
+
+        <input
+          type="radio"
+          id="carrion_crow"
+          name="fav_wildfowl"
+          value="Carrion_crow"
+        />
+        <label for="carrion_crow">Carrion Crow</label><br />
+
+        <input type="radio" id="chough" name="fav_wildfowl" value="Chough" />
+        <label for="chough">Chough</label><br />
+
+        <input type="radio" id="magpie" name="fav_wildfowl" value="Magpie" />
+        <label for="magpie">Mapie</label><br />
+
+        <input
+          type="radio"
+          id="hooded_crow"
+          name="fav_wildfowl"
+          value="Hooded_crow"
+        />
+        <label for="hooded_crow">Hooded crow</label><br />
+
+        <input type="radio" id="jay" name="fav_wildfowl" value="Jay" />
+        <label for="jay">Jay</label><br />
+
+        <input type="radio" id="jackdaw" name="fav_wildfowl" value="Jackdaw" />
+        <label for="jackdaw">Jackdaw</label><br />
+
+        <input type="radio" id="rook" name="fav_wildfowl" value="Rook" />
+        <label for="rook">Rook</label><br />
+
+        <input type="radio" id="ravin" name="fav_wildfowl" value="Ravin" />
+        <label for="ravin">Ravin</label><br />
+
+        <input
+          type="radio"
+          id="collard_dove"
+          name="fav_wildfowl"
+          value="Collard_dove"
+        />
+        <label for="collard_dove">Collard dove</label><br />
+
+        <input
+          type="radio"
+          id="rock_dove"
+          name="fav_wildfowl"
+          value="Rock_dove"
+        />
+        <label for="rock_dove">Rock dove</label><br />
+
+        <input
+          type="radio"
+          id="Stock_dove"
+          name="fav_wildfowl"
+          value="Stock_dove"
+        />
+        <label for="stock_dove">Stock dove</label><br />
+
+        <input
+          type="radio"
+          id="turtle_dove"
+          name="fav_wildfowl"
+          value="Turtle_dove"
+        />
+        <label for="turtle_dove">Turtle dove</label><br />
+
+        <input
+          type="radio"
+          id="wood_pigeon"
+          name="fav_wildfowl"
+          value="Wood_pigeon"
+        />
+        <label for="wood_pigeon">Wood Pigeon</label><br />
+
+        <br />
+      </section>
+      <br />
+      <section class="give-reason">
+        <label for="textarea"
+          ><strong>Please give a reason for your choices:</strong></label
+        >
+        <br />
+        <textarea
+          type="textarea"
+          id="textarea"
+          name="textarea"
+          placeholder="i.e. Brent, NeNe Goose, Teil, Drake Duck, Blackhead, nearback black Gull"
+        ></textarea>
+        <br />
+      </section>
+
+      <section class="submit-submit">
+        <input type="submit" id="submit" value="Submit" />
+      </section>
+    </form>
+  </body>
+  <footer>
+    <div class="footer-main">
+      <div class="footer-container">
+        <p id="footer-link">
+          <a
+            id="footer-fcc"
+            target="_blank"
+            href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form"
+            >FreeCodeCamp Responsive Web Design Projects<br /> </a
+          >Build a survey form created by Peter Rutherford 2022
+        </p>
+      </div>
+    </div>
+  </footer>
+</html>
